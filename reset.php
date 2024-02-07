@@ -8,7 +8,7 @@ if($mysqlite == false) {
     die("ERROR: Could not connect. ".$mysqlite->connect_error);
 }
 
-//Process registration form
+//Process reset form
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $mysqlite->real_escape_string($_POST['email']);
     $password = $mysqlite->real_escape_string($_POST['password']);
